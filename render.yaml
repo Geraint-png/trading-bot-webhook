@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: trading-bot-webhook
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app"
+    envVars:
+      - key: 8090436532:AAEdtagv5svIKQOT0JG1Te6aFsRwjk3rXVA
+        sync: false
+      - key: 8098105128
+        sync: false
