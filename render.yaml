@@ -7,6 +7,6 @@ services:
     startCommand: "gunicorn webhook_listener:app"
     envVars:
       - key: TELEGRAM_BOT_TOKEN
-        sync: 8090436532:AAEdtagv5svIKQOT0JG1Te6aFsRwjk3rXVA
+        value: "8090436532:AAEdtagv5svIKQOT0JG1Te6aFsRwjk3rXVA"
       - key: TELEGRAM_CHAT_ID
-        sync: 8098105128
+        value: "8098105128"
