@@ -4,9 +4,9 @@ services:
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn main:app"
+    startCommand: "gunicorn webhook_listener:app"
     envVars:
-      - key: 8090436532:AAEdtagv5svIKQOT0JG1Te6aFsRwjk3rXVA
-        sync: false
-      - key: 8098105128
-        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: 8090436532:AAEdtagv5svIKQOT0JG1Te6aFsRwjk3rXVA
+      - key: TELEGRAM_CHAT_ID
+        sync: 8098105128
